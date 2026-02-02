@@ -65,12 +65,17 @@
             <span class="material-symbols-outlined text-[18px]">login</span>
             <span>Kirish</span>
           </button>
+
+          <!-- Mobile Hamburger Trigger -->
+          <button @click="toggleMobileMenu" class="lg:hidden p-2 text-primary hover:bg-blue-50 rounded-lg">
+             <span class="material-symbols-outlined text-3xl">menu</span>
+          </button>
         </div>
       </div>
     </div>
 
-    <!-- Main Navigation Bar (Blue) -->
-    <div class="bg-primary text-white relative">
+    <!-- Main Navigation Bar (Blue) - Hidden on Mobile, Visible on Desktop -->
+    <div class="hidden lg:block bg-primary text-white relative">
       <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <nav class="flex items-center text-[13px] font-bold uppercase tracking-wide">
           <div v-for="(item, index) in menuItems" :key="index" class="group relative">
@@ -107,6 +112,62 @@
         </nav>
       </div>
     </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div v-if="isMobileMenuOpen" class="fixed inset-0 z-[100] lg:hidden">
+      <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" @click="toggleMobileMenu"></div>
+      <div class="absolute top-0 right-0 w-[85%] max-w-[320px] h-full bg-white dark:bg-[#1e212b] shadow-2xl overflow-y-auto">
+        <div class="p-4 border-b border-gray-100 dark:border-gray-700 flex items-center justify-between">
+           <img src="/logo.png" alt="KRI Logo" class="h-8 w-auto" />
+           <button @click="toggleMobileMenu" class="p-2 hover:bg-gray-100 rounded-full dark:hover:bg-gray-800 transition-colors">
+             <span class="material-symbols-outlined">close</span>
+           </button>
+        </div>
+        
+        <div class="p-4">
+           <!-- Utility Buttons Mobile -->
+           <div class="flex flex-wrap gap-2 mb-6">
+               <button v-for="lang in ['O\'ZB', 'РУС', 'ENG']" :key="lang" class="px-3 py-1 text-xs border border-gray-200 rounded-sm hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300">
+                   {{ lang }}
+               </button>
+           </div>
+
+           <nav class="flex flex-col gap-1">
+             <div v-for="(item, index) in menuItems" :key="index">
+               <div 
+                 @click="item.children ? toggleMobileSubmenu(index) : null"
+                 class="flex items-center justify-between py-3 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 cursor-pointer transition-colors"
+                 :class="{ 'bg-blue-50 text-primary dark:bg-blue-900/20 dark:text-blue-400': activeMobileSubmenu === index }"
+               >
+                 <span class="font-bold text-sm text-[#121316] dark:text-white">{{ item.title }}</span>
+                 <span v-if="item.children" class="material-symbols-outlined text-gray-400 transition-transform duration-300" :class="{ 'rotate-180': activeMobileSubmenu === index }">expand_more</span>
+               </div>
+
+               <!-- Mobile Submenu -->
+               <div v-if="item.children && activeMobileSubmenu === index" class="pl-4 pr-2 pb-2 space-y-1">
+                  <div v-for="(child, cIndex) in item.children" :key="cIndex" class="py-2 border-l-2 border-gray-100 pl-3">
+                     <p class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">{{ child.title }}</p>
+                     <ul v-if="child.subChildren" class="space-y-2 mt-2">
+                        <li v-for="(sub, sIndex) in child.subChildren" :key="sIndex">
+                           <a href="#" class="text-xs text-gray-500 dark:text-gray-400 hover:text-primary block leading-tight">
+                             {{ sub }}
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+             </div>
+           </nav>
+
+           <div class="mt-8 pt-4 border-t border-gray-100 dark:border-gray-700">
+             <button class="w-full bg-primary text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2">
+                <span class="material-symbols-outlined">login</span>
+                Kirish
+             </button>
+           </div>
+        </div>
+      </div>
+    </div>
   </header>
 </template>
 
@@ -116,6 +177,25 @@ import { ref, onMounted, onUnmounted } from 'vue';
 const showAccessibility = ref(false);
 const fontSize = ref(0);
 const accessibilityMenu = ref<HTMLElement | null>(null);
+const isMobileMenuOpen = ref(false);
+const activeMobileSubmenu = ref<number | null>(null);
+
+const toggleMobileMenu = () => {
+  isMobileMenuOpen.value = !isMobileMenuOpen.value;
+  if (isMobileMenuOpen.value) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+  }
+};
+
+const toggleMobileSubmenu = (index: number) => {
+  if (activeMobileSubmenu.value === index) {
+    activeMobileSubmenu.value = null;
+  } else {
+    activeMobileSubmenu.value = index;
+  }
+};
 
 const setTheme = (mode: string) => {
   const html = document.documentElement;

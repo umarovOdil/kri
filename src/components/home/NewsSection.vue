@@ -35,7 +35,7 @@
 </template>
 
 <script setup lang="ts">
-
+import UzbekistanMap from './UzbekistanMap.vue';
 
 const newsList = [
   {

@@ -1,7 +1,7 @@
 <template>
-  <section class="relative overflow-hidden min-h-[78vh] flex items-center py-16">
+  <section class="relative overflow-hidden min-h-[auto] lg:min-h-[78vh] flex items-center py-8 lg:py-16">
     <div class="absolute inset-0 z-0">
-      <div class="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-transparent z-10"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/40 lg:to-transparent z-10"></div>
       <div 
         v-for="(image, index) in images" 
         :key="index"
@@ -13,7 +13,7 @@
     <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-20">
       
       <!-- Combined Div Container -->
-      <div class="bg-white rounded-lg shadow-xl overflow-hidden flex flex-col lg:flex-row">
+      <div class="bg-white rounded-lg shadow-xl overflow-hidden flex flex-col-reverse lg:flex-row">
         
         <!-- Content Side -->
         <div class="p-8 lg:p-12 flex-1 flex flex-col justify-center">

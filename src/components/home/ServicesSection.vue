@@ -1,5 +1,5 @@
 <template>
-  <section class="relative z-30 -mt-16 mb-16">
+  <section class="relative z-30 mb-16 lg:-mt-16">
     <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 shadow-2xl">
         <div v-for="(service, index) in services" :key="index" class="bg-white dark:bg-[#252836] p-8 border-r border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-[#2a2d3d] transition-colors group cursor-pointer relative overflow-hidden">
