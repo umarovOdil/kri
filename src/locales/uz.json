@@ -172,6 +172,11 @@
     "hours": "Du-Ju: 09:00 - 18:00",
     "close": "Yopish"
   },
+  "auth": {
+    "login_title": "Tizimga kirish",
+    "certificate_system": "Sertifikatlash tizimi",
+    "monitoring_system": "Monitoring tizimi"
+  },
   "construction": {
     "title": "Sahifa ishlab chiqish jarayonida",
     "description": "Ushbu sahifa hozirda tayyorlanmoqda. Tez orada barcha ma'lumotlar joylashtiriladi.",

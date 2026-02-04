@@ -172,6 +172,11 @@
     "hours": "Mon-Fri: 09:00 - 18:00",
     "close": "Close"
   },
+  "auth": {
+    "login_title": "Login to System",
+    "certificate_system": "Certification System",
+    "monitoring_system": "Monitoring System"
+  },
   "construction": {
     "title": "Page Under Construction",
     "description": "This page is currently being prepared. All information will be available soon.",

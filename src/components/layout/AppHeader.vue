@@ -61,7 +61,7 @@
                 <button @click="setLocale('en')" class="px-3 py-1 text-xs transition-colors" :class="locale === 'en' ? 'bg-primary text-white' : 'hover:bg-gray-100'">ENG</button>
              </div>
           </div>
-          <button class="flex items-center gap-2 bg-primary hover:bg-[#1a254a] text-white px-5 py-2 transition-colors duration-200 shadow-lg shadow-blue-900/20 text-sm font-bold uppercase rounded-sm">
+          <button @click="showLoginModal = true" class="flex items-center gap-2 bg-primary hover:bg-[#1a254a] text-white px-5 py-2 transition-colors duration-200 shadow-lg shadow-blue-900/20 text-sm font-bold uppercase rounded-sm">
             <span class="material-symbols-outlined text-[18px]">login</span>
             <span>{{ t('nav.enter') }}</span>
           </button>
@@ -130,7 +130,7 @@
       <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" @click="toggleMobileMenu"></div>
       <div class="absolute top-0 right-0 w-[85%] max-w-[320px] h-full bg-white dark:bg-[#1e212b] shadow-2xl overflow-y-auto">
         <div class="p-4 border-b border-gray-100 dark:border-gray-700 flex items-center justify-between">
-           <img src="/logo.png" alt="KRI Logo" class="h-8 w-auto" />
+           <div></div>
            <button @click="toggleMobileMenu" class="p-2 hover:bg-gray-100 rounded-full dark:hover:bg-gray-800 transition-colors">
              <span class="material-symbols-outlined">close</span>
            </button>
@@ -143,8 +143,8 @@
                  v-for="(label, lang) in {'uz': 'O\'ZB', 'ru': 'РУС', 'en': 'ENG'}" 
                  :key="lang" 
                  @click="setLocale(lang as string)"
-                 class="px-3 py-1 text-xs border border-gray-200 rounded-sm hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 transition-colors"
-                 :class="{ 'bg-primary text-white border-primary': locale === lang }"
+                 class="px-3 py-1 text-xs border border-gray-200 bg-white rounded-sm dark:border-gray-600 transition-colors"
+                 :class="{ 'bg-primary border-primary': locale === lang }"
                >
                    {{ label }}
                </button>
@@ -196,16 +196,17 @@
            </nav>
 
            <div class="mt-8 pt-4 border-t border-gray-100 dark:border-gray-700">
-             <button class="w-full bg-primary text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2">
-                <span class="material-symbols-outlined">login</span>
-                {{ t('nav.enter') }}
-             </button>
+              <button @click="showLoginModal = true" class="w-full bg-primary text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2">
+                 <span class="material-symbols-outlined">login</span>
+                 {{ t('nav.enter') }}
+              </button>
            </div>
         </div>
       </div>
     </div>
 
     <ContactModal v-if="showContactModal" @close="showContactModal = false" />
+    <LoginModal v-if="showLoginModal" @close="showLoginModal = false" />
   </header>
 </template>
 
@@ -213,6 +214,7 @@
 import { ref, onMounted, onUnmounted, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import ContactModal from './ContactModal.vue';
+import LoginModal from './LoginModal.vue';
 
 const { t, locale } = useI18n();
 
@@ -224,6 +226,7 @@ const setLocale = (lang: string) => {
 
 const showAccessibility = ref(false);
 const showContactModal = ref(false);
+const showLoginModal = ref(false);
 const fontSize = ref(0);
 const accessibilityMenu = ref<HTMLElement | null>(null);
 const isMobileMenuOpen = ref(false);
