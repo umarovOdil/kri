@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "title": "KRI - Kompetensiyani Rivojlantirish Instituti"
+  },
   "nav": {
     "home": "Bosh sahifa",
     "about": "Biz haqimizda",
@@ -14,6 +17,7 @@
   "menu": {
     "home": "Bosh Sahifa",
     "institute": {
+      "contact": "Aloqa",
       "title": "Institut",
       "about": "Institut haqida",
       "rector_appeal": "Rektor murojaati",

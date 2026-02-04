@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "title": "ICD - Institute for Competence Development"
+  },
   "nav": {
     "home": "Home",
     "about": "About Us",
@@ -14,6 +17,7 @@
   "menu": {
     "home": "Home",
     "institute": {
+      "contact": "Contact",
       "title": "Institute",
       "about": "About Institute",
       "rector_appeal": "Rector's Appeal",
