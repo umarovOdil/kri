@@ -39,8 +39,8 @@
           </div>
           <div>
             <h3 class="font-bold text-sm text-gray-900 dark:text-white mb-1 uppercase tracking-wide opacity-70">{{ t('contact.phone') }}</h3>
-            <a href="tel:+998503332401" class="text-lg font-bold text-primary hover:underline block">
-              (50) 333-24-01
+            <a href="tel:+998712411173" class="text-lg font-bold text-primary hover:underline block">
+              (71) 241-11-73
             </a>
           </div>
         </div>

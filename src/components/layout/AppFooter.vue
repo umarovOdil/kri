@@ -43,7 +43,7 @@
             </div>
             <div class="flex items-center gap-3">
               <span class="material-symbols-outlined text-secondary text-sm">call</span>
-              <span class="text-gray-400 text-sm">(50) 333-24-01</span>
+              <span class="text-gray-400 text-sm">(71) 241-11-73</span>
             </div>
             <div class="flex items-center gap-3">
               <span class="material-symbols-outlined text-secondary text-sm">mail</span>

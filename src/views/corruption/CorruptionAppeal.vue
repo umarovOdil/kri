@@ -18,7 +18,7 @@
             </div>
             <div>
               <h3 class="font-bold text-gray-900 dark:text-white mb-1">{{ t('corruption.hotline') }}</h3>
-              <p class="text-lg text-primary font-bold">(50) 333-24-01</p>
+              <p class="text-lg text-primary font-bold">(71) 241-11-73</p>
               <p class="text-xs text-gray-500 mt-1">Du-Ju: 09:00 - 18:00</p>
             </div>
           </div>
