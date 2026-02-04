@@ -20,26 +20,26 @@
           <div class="relative text-[#121316]">
             <span class="absolute -top-4 -left-2 text-6xl text-gray-200 font-serif">"</span>
             <p class="text-base md:text-lg italic leading-relaxed mb-6 relative z-10">
-              Qurilish sohasida 'o'g'rilik' va 'korrupsiya' degan tushunchalar mutlaqo bo'lmasligi kerak. Buning uchun barcha jarayonlarni — loyihalashtirishdan to foydalanishga topshirishgacha raqamlashtirishimiz shart.
+              {{ t('hero.quote') }}
             </p>
             <p class="text-base md:text-lg italic leading-relaxed mb-6">
-               Loyiha sifatli bo'lsa, qurilish ham sifatli bo'ladi. Sifatsiz loyiha — davlat mablag'ini havoga uchirish bilan barobar.
+               {{ t('hero.sub_quote') }}
             </p>
-            <div class="mt-8">
-              <span class="text-xs text-gray-500 font-bold uppercase block mb-1">O'zbekiston Respublikasi Prezidenti</span>
-              <span class="text-xl font-extrabold text-primary">Shavkat Mirziyoyev</span>
+            <div class="mt-8 text-right">
+              <span class="text-xs text-gray-500 font-bold uppercase block mb-1">{{ t('hero.position') }}</span>
+              <span class="text-xl font-extrabold text-primary">{{ t('hero.name') }}</span>
             </div>
           </div>
           
           <div class="mt-8 pt-8 border-t border-gray-100">
-             <a href="#" class="text-primary font-bold flex items-center gap-2 hover:gap-3 transition-all">
-              Batafsil o'qish <span class="material-symbols-outlined">arrow_forward</span>
+             <a href="https://www.lex.uz/docs/-6905975" target="_blank" class="text-primary font-bold flex items-center gap-2 hover:gap-3 transition-all">
+              {{ t('hero.read_more') }} <span class="material-symbols-outlined">arrow_forward</span>
             </a>
           </div>
         </div>
 
         <!-- Image Side -->
-        <div class=" w-1/3 relative min-h-[600px] ">
+        <div class="w-full lg:w-1/3 relative min-h-[300px] lg:min-h-[600px]">
             <img src="/president_final.png" alt="Shavkat Mirziyoyev" class="absolute inset-0 w-full h-full object-cover object-top" />
              <!-- Optional Overlay for better text contrast if needed, though image side is separate -->
         </div>
@@ -51,6 +51,9 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 
 const images = [
   'https://gov.uz/_next/image?url=https%3A%2F%2Fapi-portal.gov.uz%2Fuploads%2F14%2F2025%2F03%2F18%2F780d6917-ba18-ea78-a419-3ef528482d51_lists_slider_.jpg&w=3840&q=75',

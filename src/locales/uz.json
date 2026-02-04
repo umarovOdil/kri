@@ -1,0 +1,344 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "services": "Xizmatlar",
+    "news": "Yangiliklar",
+    "contact": "Bog'lanish",
+    "enter": "Kirish",
+    "accessibility": "Maxsus imkoniyatlar",
+    "appearance": "Tashqi ko'rinish",
+    "font_size": "Shrift o'lchami",
+    "increase": "ga kattalashtirish"
+  },
+  "menu": {
+    "home": "Bosh Sahifa",
+    "institute": {
+      "title": "Institut",
+      "about": "Institut haqida",
+      "rector_appeal": "Rektor murojaati",
+      "council": "Institut Kengashi",
+      "leadership": "Rahbariyat",
+      "structure": "Institut tuzilmasi",
+      "branches": "Hududiy filiallar",
+      "divisions": "Tarkibiy bo'limlar",
+      "departments": "Kafedralar",
+      "vacancies": "Bo'sh ish o'rinlari"
+    },
+    "programs": {
+      "title": "Ta'lim Dasturlari",
+      "masters": "Magistratura: Qurilish muhandisligi",
+      "retraining": "Qayta tayyorlash: Qurilish muhandisligi",
+      "qualification": "Malaka oshirish (VMQ 460)",
+      "special": "Maxsus kurslar (VMQ 451)"
+    },
+    "science": {
+      "title": "Ilmiy Faoliyat",
+      "council": "Ilmiy kengash tarkibi",
+      "seminar": "Ilmiy seminar a'zolari",
+      "articles": "Maqola va tezislar",
+      "manuals": "Darslik va qo'llanmalar",
+      "content": "Kontentlar",
+      "regulations": "Me'yoriy-huquqiy hujjatlar",
+      "open_data": "Ochiq ma'lumotlar"
+    },
+    "international": {
+      "title": "Xalqaro Aloqalar",
+      "partners": "Xalqaro hamkorlar",
+      "cooperation": "Hamkorlik",
+      "visits": "Safar va uchrashuvlar"
+    },
+    "corruption": {
+      "title": "Korrupsiya",
+      "info": "Ma'lumotlar",
+      "appeal": "Murojaat qilish"
+    },
+    "faq": "FAQ",
+    "contact": "Bog'lanish"
+  },
+  "corruption": {
+    "title_appeal": "Korrupsiya faktlari haqida xabar berish",
+    "desc_appeal": "Institut xodimlari tomonidan yo‘l qo‘yilayotgan korrupsiya va boshqa noqonuniy xatti-harakatlar, shuningdek sohaga oid sodir etilgan yoki etilayotgan jinoyatlar va boshqa huquqbuzarliklar haqida xabar berishingiz mumkin.",
+    "hotline": "Ishonch telefoni",
+    "email": "Elektron pochta",
+    "bot": "Telegram bot",
+    "form_title": "Murojaat yuborish",
+    "name": "F.I.SH",
+    "name_placeholder": "Ism familiyangizni kiriting",
+    "phone": "Telefon raqam",
+    "type": "Murojaat turi",
+    "types": {
+      "complaint": "Shikoyat",
+      "suggestion": "Taklif",
+      "application": "Ariza"
+    },
+    "message": "Murojaat matni",
+    "message_placeholder": "Murojaatingiz mazmunini yozing...",
+    "privacy": "Men shaxsiy ma'lumotlarim qayta ishlanishiga roziman",
+    "submit": "Yuborish",
+    "success": "Murojaatingiz qabul qilindi! Tez orada siz bilan bog'lanamiz.",
+    "title_info": "Korrupsiya va unga qarshi kurashishga oid qonunchilik hujjatlari",
+    "laws": [
+      {
+        "title": "“Birlashgan Millatlar Tashkilotining Korrupsiyaga qarshi konvensiyasiga (Nyu-York, 2003-yil 31-oktyabr) O‘zbekiston Respublikasining qo‘shilishi to‘g‘risida”gi O‘zbekiston Respublikasining Qonuni",
+        "subtitle": "O‘RQ-158-son, 07.07.2008-yil"
+      },
+      {
+        "title": "“Korrupsiyaga qarshi kurashish to‘g‘risida”gi O‘zbekiston Respublikasining Qonuni",
+        "subtitle": "O‘RQ-419-son, 03.01.2017-yil"
+      },
+      {
+        "title": "“O‘zbekiston Respublikasida Korrupsiyaga qarshi kurashish tizimini yanada takomillashtirish chora-tadbirlari to‘g‘risida”gi O‘zbekiston Respublikasi Prezidentining Farmoni",
+        "subtitle": "PF-5729-son, 27.05.2019-yil"
+      },
+      {
+        "title": "“O‘zbekiston Respublikasida Korrupsiyaga qarshi kurashish tizimini takomillashtirish bo‘yicha qo‘shimcha chora-tadbirlar to‘g‘risida”gi O‘zbekiston Respublikasi Prezidentining Farmoni",
+        "subtitle": "PF-6013-son, 29.06.2020-yil"
+      },
+      {
+        "title": "“Korrupsiyaga qarshi murosasiz munosabatda bo‘lish muhitini yaratish, davlat va jamiyat boshqaruvida korrupsiyaviy omillarni keskin kamaytirish va bunda jamoatchilik ishtirokini kengaytirish chora-tadbirlari to‘g‘risida”gi O‘zbekiston Respublikasi Prezidentining Farmoni",
+        "subtitle": "PF-6257-son, 06.07.2021-yil"
+      },
+      {
+        "title": "“Davlat organlari va tashkilotlari faoliyatining ochiqlik darajasini oshirish va baholash tizimini joriy etish chora-tadbirlari to‘g‘risida”gi O‘zbekiston Respublikasi Prezidentining Farmoni",
+        "subtitle": "PF-154-son, 14.06.2022-yil"
+      },
+      {
+        "title": "“Davlat organlari huzurida jamoatchilik kengashlari faoliyatini tashkil etish chora-tadbirlari to‘g‘risida”gi O‘zbekiston Respublikasi Prezidentining qarori",
+        "subtitle": "PQ-3837-son, 04.07.2018-yil"
+      },
+      {
+        "title": "“O‘zbekiston Respublikasi Korrupsiyaga qarshi kurashish agentligi faoliyatini tashkil etish to‘g‘risida”gi O‘zbekiston Respublikasi Prezidentining qarori",
+        "subtitle": "PQ-4761-son, 29.06.2020-yil"
+      },
+      {
+        "title": "“Korrupsiyaga qarshi kurashish faoliyatini samarali tashkil etishga doir qo‘shimcha chora-tadbirlar to‘g‘risida”gi O‘zbekiston Respublikasi Prezidentining qarori",
+        "subtitle": "PQ-5177-son, 06.07.2021-yil"
+      },
+      {
+        "title": "“Korrupsiyaga qarshi kurashish ishlarining samaradorligini reyting baholash tizimini joriy etish chora-tadbirlari to‘g‘risida”gi O‘zbekiston Respublikasi Prezidentining qarori",
+        "subtitle": "PQ-81-son, 12.01.2022-yil"
+      },
+      {
+        "title": "“Davlat boshqaruvi sohasida korrupsiyaviy xavf-xatarlarni bartaraf etish mexanizmlarini takomillashtirish va ushbu sohada jamoatchilik ishtirokini kengaytirish chora-tadbirlari to‘g‘risida”gi O‘zbekiston Respublikasi Prezidentining qarori",
+        "subtitle": "PQ-240-son, 11.05.2022-yil"
+      },
+      {
+        "title": "“Korrupsiyaga oid huquqbuzarlik haqida xabar bergan yoki korrupsiyaga qarshi kurashishga boshqa tarzda ko‘maklashgan shaxslarni rag‘batlantirish tartibi to‘g‘risidagi nizomni tasdiqlash haqida”gi O‘zbekiston Respublikasi Vazirlar Mahkamasining qarori",
+        "subtitle": "829-son, 31.12.2020-yil"
+      },
+      {
+        "title": "“Davlat hokimiyati va boshqaruvi organlari, shu jumladan ularning hududiy bo‘linmalari, davlat unitar korxonalari va muassasalari, davlat ulushi 50 foizdan yuqori tashkilotlar faoliyatida korrupsiyaviy xavf-xatarlarni aniqlash va baholash uslubiyotini tasdiqlash to‘g‘risida”",
+        "subtitle": "3383-son, 31.08.2022-yil"
+      },
+      {
+        "title": "“Davlat fuqarolik xizmatchilari tomonidan odob-axloq qoidalariga rioya etilishini ta’minlash bo‘yicha qo‘shimcha chora-tadbirlar to‘g‘risida”gi O‘zbekiston Respublikasi Vazirlar Mahkamasining qarori",
+        "subtitle": "595-son, 14.10.2022-yil"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Ko'p beriladigan savollar",
+    "items": [
+      {
+        "question": "Qabul komissiyasining ishlash jadvali qanday?",
+        "answer": "Dushanba – Juma kunlari, soat 9:00 dan 18:00 gacha."
+      },
+      {
+        "question": "Magistraturaga qabul talablari qanaqa?",
+        "answer": "MBA mutaxassisliklariga kamida 3 yil ish staji va 45 yoshgacha bo'lgan nomzodlar qabul qilinadi. MSc mutaxassisligiga staj talab etilmaydi."
+      },
+      {
+        "question": "Hujjatlar qachon qabul qilinadi?",
+        "answer": "Hujjatlarni qabul qilish yiliga ikki marta (yozgi va qishki qabul davri) amalga oshiriladi."
+      },
+      {
+        "question": "Kirish imtihonlari qanday bo'lib o'tadi?",
+        "answer": "Ikki bosqichda: 1) Nomzodlar bilan suhbat. 2) Bilim va malakalarni baholash agentligi tomonidan test sinovlari."
+      },
+      {
+        "question": "Qanday hujjatlar talab etiladi?",
+        "answer": "Ariza, tavsiyanoma, diplom nusxasi, 4x6 rasm, mehnat daftarchasidan ko'chirma, til sertifikati (mavjud bo'lsa)."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Biz bilan bog'laning",
+    "address_title": "Manzil",
+    "address": "Toshkent shahri, Shayxontohur tumani, Abdulla Qodiriy koʻchasi, 7A",
+    "phone": "Telefon",
+    "email": "Elektron pochta",
+    "working_hours": "Ish vaqti",
+    "hours": "Du-Ju: 09:00 - 18:00",
+    "close": "Yopish"
+  },
+  "construction": {
+    "title": "Sahifa ishlab chiqish jarayonida",
+    "description": "Ushbu sahifa hozirda tayyorlanmoqda. Tez orada barcha ma'lumotlar joylashtiriladi.",
+    "back_home": "Bosh sahifaga qaytish"
+  },
+  "hero": {
+    "quote": "Qurilish sohasida 'o'g'rilik' va 'korrupsiya' degan tushunchalar mutlaqo bo'lmasligi kerak. Buning uchun barcha jarayonlarni — loyihalashtirishdan to foydalanishga topshirishgacha raqamlashtirishimiz shart.",
+    "sub_quote": "Loyiha sifatli bo'lsa, qurilish ham sifatli bo'ladi. Sifatsiz loyiha — davlat mablag'ini havoga uchirish bilan barobar.",
+    "position": "O'zbekiston Respublikasi Prezidenti",
+    "name": "Shavkat Mirziyoyev",
+    "read_more": "Batafsil o'qish"
+  },
+  "news": {
+    "title": "So'nggi Yangiliklar",
+    "all": "Barcha yangiliklar",
+    "map_title": "Hududiy Qamrov",
+    "badge": "Yangiliklar",
+    "read_more": "Batafsil o'qish",
+    "back": "Ortga qaytish",
+    "not_found": "Yangilik topilmadi",
+    "to_home": "Bosh sahifaga"
+  },
+  "advantages": {
+    "title": "Bizning ustunliklarimiz",
+    "cert": {
+        "title": "Professional Sertifikatlash",
+        "desc": "Shaharsozlik faoliyati sohasidagi mutaxassislarni sertifikatlash tizimini joriy etish va takomillashtirish orqali kadrlar malakasini tasdiqlash"
+    },
+    "course": {
+        "title": "Malaka Oshirish Kurslari",
+        "desc": "Qurilish va uy-joy kommunal xo'jaligi sohasidagi rahbar va mutaxassislar uchun zamonaviy o'quv dasturlari asosida malaka oshirish kurslarini tashkil etish"
+    },
+    "manual": {
+        "title": "Metodik Qo'llanmalar",
+        "desc": "Soha mutaxassislari uchun zarur bo'lgan o'quv-uslubiy qo'llanmalar, darsliklar va o'quv materiallarini ishlab chiqish va nashr etish"
+    },
+    "science": {
+        "title": "Ilmiy Faoliyat",
+        "desc": "Sohadagi muammolarni o'rganish va ularni hal etish bo'yicha ilmiy-tadqiqot ishlarini olib borish va innovatsion yechimlarni joriy etish"
+    },
+    "inter": {
+        "title": "Xalqaro Hamkorlik",
+        "desc": "Rivojlangan davlatlarning yetakchi ta'lim muassasalari va ilmiy markazlari bilan hamkorlik aloqalarini o'rnatish va tajriba almashish"
+    },
+    "digital": {
+        "title": "Raqamli Platformalar",
+        "desc": "O'quv jarayonlari va sertifikatlash tizimini to'liq raqamlashtirish, shaffoflikni ta'minlash uchun zamonaviy axborot tizimlaridan foydalanish"
+    },
+    "expert": {
+        "title": "Zamonaviy Mutaxassislar",
+        "desc": "Mehnat bozori talablariga javob beradigan, yuqori malakali va raqobatbardosh kadrlar tayyorlash tizimini yo'lga qo'yish"
+    }
+  },
+  "gallery": {
+    "title": "Fotogalereya",
+    "image_alt": "Galereya rasmi {index}",
+    "more": "Barchasini ko'rish",
+    "less": "Qisqartirish"
+  },
+  "mission": {
+    "label": "Bizning Maqsadimiz",
+    "text": "Qurilish va uy-joy kommunal xo‘jaligi sohasidagi yo‘nalishlar bo‘yicha qisqa muddatli o‘quv kurslarida o‘qitish va ularning faoliyat yo‘nalishlarini davriy ravishda sertifikatlovchi oliy ta’lim muassasasi."
+  },
+  "footer": {
+    "institute_name": "Kompetensiyani Rivojlantirish",
+    "institute_sub": "Instituti",
+    "about": "Kompetensiyani Rivojlantirish Instituti O'zbekiston qurilish sohasida professional sertifikatlashtirish bo'yicha markaziy organ hisoblanadi. Biz milliy infratuzilmada xavfsizlik, sifat va innovatsiyalarni ta'minlaymiz.",
+    "sections": {
+        "institute": "Institut",
+        "quick_links": "Tezkor Havolalar",
+        "contact": "Bog'lanish"
+    },
+    "links": {
+        "about": "Biz haqimizda",
+        "leadership": "Rahbariyat",
+        "structure": "Tuzilma",
+        "jobs": "Bo'sh ish o'rinlari",
+        "docs": "Me'yoriy hujjatlar",
+        "programs": "Ta'lim dasturlari",
+        "schedule": "Imtihon jadvali",
+        "distance": "Masofaviy ta'lim",
+        "check": "Sertifikatni tekshirish"
+    },
+    "contact_btn": "Xabar yuborish",
+    "rights": "© 2026 Kompetensiyani Rivojlantirish Instituti. Barcha huquqlar himoyalangan.",
+    "policy": "Maxfiylik siyosati",
+    "terms": "Foydalanish shartlari",
+    "map": "Sayt xaritasi"
+  },
+  "partners": {
+    "title": "Bizga ishonadilar",
+    "president_admin": "O'zbekiston Respublikasi Prezidenti Administratsiyasi",
+    "min_construction": "Qurilish va uy-joy kommunal xo'jaligi vazirligi"
+  },
+  "useful_links": {
+    "title": "Foydali havolalar",
+    "president": "O'zbekiston Respublikasi Prezidentining rasmiy veb-sayti",
+    "civil_service": "Davlat xizmatlarini rivojlantirish agentligi",
+    "government": "O'zbekiston Respublikasi Hukumat portali",
+    "assessment": "Bilim va malakalarni baholash agentligi",
+    "economy": "O'zbekiston Respublikasi Iqtisodiyot va moliya vazirligi"
+  },
+  "stats": {
+    "specialists": "Tayyorlangan mutaxassislar",
+    "partners": "Hamkor kompaniyalar",
+    "projects": "Ilmiy loyihalar",
+    "centers": "Hududiy markazlar"
+  },
+  "courses": {
+    "title": "Ta'lim Yo'nalishlari",
+    "items": {
+      "engineering": {
+        "title": "Loyiha Bosh Muhandisi Sertifikatlash Kursi",
+        "description": "I va II toifali loyihalar bosh muhandislari uchun attestatsiya imtihoniga har tomonlama tayyorgarlik."
+      },
+      "safety": {
+        "title": "Qurilish Maydonida Xavfsizlikni Boshqarish",
+        "description": "Yangi xavfsizlik qoidalari va xalqaro standartlarga qaratilgan uchastka boshliqlari uchun majburiy qayta tayyorlash."
+      },
+      "architecture": {
+        "title": "Zamonaviy Loyihalashda BIM Texnologiyalari",
+        "description": "Binolarni axborot modellashtirish dasturiy ta'minoti va hamkorlikdagi loyihalash ish oqimlari bo'yicha amaliy kurs."
+      }
+    },
+    "categories": {
+      "engineering": "QURILISH MUHANDISLIGI",
+      "safety": "XAVFSIZLIK",
+      "architecture": "ARXITEKTURA"
+    }
+  },
+  "services": {
+    "search": {
+      "title": "Mutaxassisni izlash",
+      "desc": "Sertifikatlangan ekspertlarning milliy reestridan qidirish."
+    },
+    "library": {
+      "title": "Elektron kutubxona",
+      "desc": "Texnik reglamentlar va ilmiy maqolalar bazasiga kirish."
+    },
+    "exam": {
+      "title": "Imtihonga ariza topshirish",
+      "desc": "Malaka attestatsiyasi uchun hujjatlarni topshirish."
+    },
+    "help": {
+      "title": "Yordam kerakmi?",
+      "desc": "Yordam olish uchun qo'llab-quvvatlash markaziga murojaat qiling.",
+      "link": "Qo'llab-quvvatlash markazi"
+    }
+  },
+  "news_data": {
+    "6": {
+      "title": "BoMI qurilish obyektida amaliy mashg'ulotlar o'tkazildi",
+      "time": "Bugun",
+      "dateBadge": "04<br>FEV",
+      "content": "<p>33-mavsum va 31-mavsum tinglovchilari, \"Qurilish obyektlarida davlat nazoratini olib borish\" yo'nalishi bo'yicha, Toshkent shahridagi Koreya Respublikasining \"BoMI\" qurilish obyektida oxirgi amaliy darslarni olib bormoqdalar. Bu amaliy darslar tinglovchilarning davlat nazorati va huquqiy bilimlarini yanada mustahkamlash hamda amaliy tajriba orttirish maqsadida tashkil etilgan.</p><p class=\"mt-4\">\"BoMI\" qurilish obyekti Janubiy Koreya tomonidan amalga oshirilayotgan zamonaviy va innovatsion loyihalardan biri bo'lib, Toshkent shahrining rivojlanishida muhim ahamiyatga ega.</p><p class=\"mt-4\">33-mavsum va 31-mavsum tinglovchilarining \"Qurilish obyektlarida davlat nazoratini olib borish\" yo'nalishi bo'yicha \"BoMI\" qurilish obyektida o'tkazilgan oxirgi amaliy mashg'ulotlari juda samarali bo'ldi. Tinglovchilar bu mashg'ulotlar davomida o'z kasbiy faoliyatlarida davlat nazoratini samarali amalga oshirish bo'yicha qimmatli bilim va tajriba orttirdilar. Bu esa ularga kelgusidagi faoliyatlarida katta yordam beradi.</p>"
+    },
+    "5": {
+      "title": "Deko-Kron qurilish korxonasida targ'ibot tadbiri o'tkazildi",
+      "time": "Bugun",
+      "dateBadge": "15<br>MAY",
+      "content": "<p>Ta'kidlab kelayotganimizdek, Qurilish va uy-joy kommunal xo'jaligi vazirligi huzurida tashkil etilgan Kompetensiyani rivojlantirish institutida qurilish va uy-joy kommunal xo'jaligi sohasida faoliyat yurituvchi mutaxassislar malakasi oshirilib kelinmoqda.</p><p class=\"mt-4\">O‘zbekiston Respublikasi Vazirlar Mahkamasining 460-sonli qarori ijrosi hamda mazkur qaror mohiyatini targ'ib qilish maqsadida Kompetensiyani rivojlantirish instituti mas'ullari tomonidan joylarda targ'ibot ishlari o'tkazib kelinmoqda. Bunda mutaxassislarni sertifikatlash tartibi, uning o'ziga xos talablari va imkoniyatlari haqida atroflicha ma'lumot berilmoqda.</p><p class=\"mt-4 font-semibold\">Xususan, bugungi tadbir Deko-Kron qurilish korxonasida bo'lib o'tdi.</p><blockquote class=\"border-l-4 border-primary pl-4 italic my-6 text-gray-700 dark:text-gray-300\">\"Bugun hamma sohalar kabi shaharsozlik yo'nalishida ham zamonaviy texnologiyalarga talab katta. Mazkur texnologiyalarni amaliyotda qo'llash esa ishchi-xodimdan katta mas'uliyat, bilim va ko'nikma talab etadi. Shu ma'noda biz ta'lim tizimimizni so'nggi, innovatsion yechimlar asosida ishlab chiqqanmiz. O'quv kurslarimizda berib borilayotgan nazariy hamda amaliy bilimlar sizning kelgusi faoliyatingiz samaradorligini oshirishga xizmat qiladi\", - dedi institut mas'uli F.Mamajonova.</blockquote><p>Alohida qayd etish lozimki, ayni targ'ibot tadbirlari sohani takomillashtirish yo'lidagi muhim ishlarning debochasi bo'lib xizmat qilmoqda.</p>"
+    },
+    "4": {
+      "title": "“Seysmik izolyatsiya qoʻllash talablari va amaliyoti” nomli malaka oshirish oʻquv kurslari",
+      "time": "Bugun",
+      "dateBadge": "15<br>MAY",
+      "content": "<p>Oʻzbekiston Respublikasi Prezidentining 2024-yil 17-aprel sanasidagi PQ-161-son qarorning 1-ilovasi bilan tasdiqlangan “Seysmik xavfsizlikni taʼminlash hamda bino va inshootlarning zilzilabardoshligini oshirish tizimini takomillashtirish boʻyicha Yoʻl xaritasi”ning 26-bandida belgilangan vazifalar ijrosini taʼminlash maqsadida, Kompetensiyani rivojlantirish institutida loyihalash, qurilish tashkilotlari va davlat qurilish nazorati inspeksiyasi mutaxassislari uchun moʻljallangan “Seysmik izolyatsiya qoʻllash talablari va amaliyoti” nomli malaka oshirish oʻquv kurslari tashkil etilganini maʼlum qilamiz.</p><p class=\"mt-4\">Malaka oshirish oʻquv kursi davomiyligi 44 soat (1 hafta).</p><h3 class=\"text-lg font-bold mt-6 mb-2\">Kursdan tinglovchilar:</h3><ul class=\"list-disc pl-5 space-y-2\"><li>xorijiy tajribani oʻrgangan holda bino va inshootlarning zilzilaga chidamliligini taʼminlashning amaliy usullari;</li><li>seysmik xavfli hududlarda zamonaviy loyihalash va qurilish;</li><li>loyiha boʻyicha normativ va texnik adabiyotlardan foydalanish va seysmik zonalarda bino va inshootlarni qurishni;</li><li>bino va inshootlarning seysmik qarshiligini baholashning zamonaviy usullarini qoʻllash;</li><li>seysmik xavfli hududlarda loyihalash va qurilishning asosiy prinsiplarini hal etish;</li><li>hayot xavfsizligi talablarini hisobga olgan holda zilzilaga chidamli binolarni loyihalash, qurish va ulardan foydalanish tamoyillarini oʻzlashtirish;</li><li>binolar va inshootlarni seysmik taʼsir uchun hisoblash usullari, shu jumladan avtomatlashtirilgan hisoblash dasturiy taʼminot tizimlaridan foydalanish malakalariga ega boʻlishadi.</li></ul><p class=\"mt-4\">Taʼlim dasturlarni toʻliq oʻzlashtirgan va yakuniy nazoratdan muvaffaqiyatli oʻtgan kurs tinglovchilariga davlat namunasidagi sertifikat beriladi.</p><p class=\"mt-4 font-semibold\">Kurs toʻgʻrisida batafsil maʼlumot uchun 71 241-58-01, 93 350-30-13 raqamiga murojaat qilishingiz mumkin.</p>"
+    }
+  }
+}

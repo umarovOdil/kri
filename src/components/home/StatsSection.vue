@@ -1,7 +1,7 @@
 <template>
   <section class="py-12 bg-white dark:bg-background-dark border-b border-gray-100 dark:border-gray-800">
     <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-wrap justify-between items-center gap-8 text-center md:text-left">
+      <div class="flex flex-wrap justify-between items-center gap-8 text-left md:text-left">
         <div v-for="(stat, index) in stats" :key="index" class="flex items-center gap-4">
           <div class="bg-gray-100 dark:bg-gray-800 p-3 rounded-none">
             <span class="material-symbols-outlined text-3xl text-primary dark:text-blue-400">{{ stat.icon }}</span>
@@ -18,10 +18,15 @@
 </template>
 
 <script setup lang="ts">
-const stats = [
-  { icon: 'groups', value: '12,450', label: 'Tayyorlangan mutaxassislar' },
-  { icon: 'domain', value: '850+', label: 'Hamkor kompaniyalar' },
-  { icon: 'science', value: '42', label: 'Ilmiy loyihalar' },
-  { icon: 'map', value: '14', label: 'Hududiy markazlar' }
-]
+import { computed } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
+
+const stats = computed(() => [
+  { icon: 'groups', value: '12,450', label: t('stats.specialists') },
+  { icon: 'domain', value: '850+', label: t('stats.partners') },
+  { icon: 'science', value: '42', label: t('stats.projects') },
+  { icon: 'map', value: '14', label: t('stats.centers') }
+]);
 </script>

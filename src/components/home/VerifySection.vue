@@ -26,11 +26,11 @@
             <a class="text-white/70 hover:text-white text-sm" href="#">Arxivni ko'rish</a>
           </div>
           <div class="space-y-4">
-            <a class="block bg-white/5 hover:bg-white/10 p-4 transition-colors border-l-2 border-transparent hover:border-secondary" href="#">
+            <a class="block bg-white/5 hover:bg-white/10 p-4 transition-colors border-l-2 border-transparent hover:border-secondary" href="https://lex.uz/docs/-6920040?ONDATE=07.08.2024%2000" target="_blank">
               <h4 class="text-white font-bold text-sm mb-1">Seysmik xavfni baholashning zamonaviy metodologiyalari</h4>
               <p class="text-xs text-blue-200">Qurilish muhandisligi jurnali • 42-jild, 2024</p>
             </a>
-            <a class="block bg-white/5 hover:bg-white/10 p-4 transition-colors border-l-2 border-transparent hover:border-secondary" href="#">
+            <a class="block bg-white/5 hover:bg-white/10 p-4 transition-colors border-l-2 border-transparent hover:border-secondary" href="https://jurnal.qurilishtalim.uz/dannie/2024_6.pdf" target="_blank">
               <h4 class="text-white font-bold text-sm mb-1">Jamoat binolarida energiya samaradorligi standartlari</h4>
               <p class="text-xs text-blue-200">KRI Axborotnomasi • 3-nashr, 2024</p>
             </a>

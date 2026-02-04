@@ -1,0 +1,344 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "news": "News",
+    "contact": "Contact",
+    "enter": "Login",
+    "accessibility": "Accessibility",
+    "appearance": "Appearance",
+    "font_size": "Font Size",
+    "increase": "increase by"
+  },
+  "menu": {
+    "home": "Home",
+    "institute": {
+      "title": "Institute",
+      "about": "About Institute",
+      "rector_appeal": "Rector's Appeal",
+      "council": "Institute Council",
+      "leadership": "Leadership",
+      "structure": "Institute Structure",
+      "branches": "Regional Branches",
+      "divisions": "Structural Divisions",
+      "departments": "Departments",
+      "vacancies": "Vacancies"
+    },
+    "programs": {
+      "title": "Educational Programs",
+      "masters": "Master's: Civil Engineering",
+      "retraining": "Retraining: Civil Engineering",
+      "qualification": "Qualification Improvement (VMQ 460)",
+      "special": "Special Courses (VMQ 451)"
+    },
+    "science": {
+      "title": "Scientific Activity",
+      "council": "Scientific Council Composition",
+      "seminar": "Scientific Seminar Members",
+      "articles": "Articles and Theses",
+      "manuals": "Textbooks and Manuals",
+      "content": "Contents",
+      "regulations": "Regulatory Documents",
+      "open_data": "Open Data"
+    },
+    "international": {
+      "title": "International Relations",
+      "partners": "International Partners",
+      "cooperation": "Cooperation",
+      "visits": "Visits and Meetings"
+    },
+    "corruption": {
+      "title": "Corruption",
+      "info": "Information",
+      "appeal": "Submit Appeal"
+    },
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "corruption": {
+    "title_appeal": "Report Corruption Facts",
+    "desc_appeal": "You can report corruption and other illegal actions committed by Institute employees, as well as crimes and other offenses in the field.",
+    "hotline": "Hotline",
+    "email": "Email",
+    "bot": "Telegram Bot",
+    "form_title": "Send Appeal",
+    "name": "Full Name",
+    "name_placeholder": "Enter your full name",
+    "phone": "Phone Number",
+    "type": "Appeal Type",
+    "types": {
+      "complaint": "Complaint",
+      "suggestion": "Suggestion",
+      "application": "Application"
+    },
+    "message": "Message Body",
+    "message_placeholder": "Write the content of your appeal...",
+    "privacy": "I agree to the processing of my personal data",
+    "submit": "Send",
+    "success": "Your appeal has been accepted! We will contact you soon.",
+    "title_info": "Legislation on Combating Corruption",
+    "laws": [
+      {
+        "title": "Law of the Republic of Uzbekistan \"On Accession to the UN Convention against Corruption\"",
+        "subtitle": "ORQ-158, 07.07.2008"
+      },
+      {
+        "title": "Law of the Republic of Uzbekistan \"On Combating Corruption\"",
+        "subtitle": "ORQ-419, 03.01.2017"
+      },
+      {
+        "title": "Decree of the President \"On measures to further improve the anti-corruption system in the Republic of Uzbekistan\"",
+        "subtitle": "PF-5729, 27.05.2019"
+      },
+      {
+        "title": "Decree of the President \"On additional measures to improve the anti-corruption system in the Republic of Uzbekistan\"",
+        "subtitle": "PF-6013, 29.06.2020"
+      },
+      {
+        "title": "Decree of the President \"On measures to create an environment of intolerant attitude towards corruption\"",
+        "subtitle": "PF-6257, 06.07.2021"
+      },
+      {
+        "title": "Decree of the President \"On measures to introduce a system for increasing openness and evaluating state bodies\"",
+        "subtitle": "PF-154, 14.06.2022"
+      },
+      {
+        "title": "Resolution of the President \"On measures to organize the activities of public councils under state bodies\"",
+        "subtitle": "PQ-3837, 04.07.2018"
+      },
+      {
+        "title": "Resolution of the President \"On the organization of the activities of the Anti-Corruption Agency\"",
+        "subtitle": "PQ-4761, 29.06.2020"
+      },
+      {
+        "title": "Resolution of the President \"On additional measures for the effective organization of anti-corruption activities\"",
+        "subtitle": "PQ-5177, 06.07.2021"
+      },
+      {
+        "title": "Resolution of the President \"On measures to introduce a rating assessment system for anti-corruption work\"",
+        "subtitle": "PQ-81, 12.01.2022"
+      },
+      {
+        "title": "Resolution of the President \"On measures to improve mechanisms for eliminating corruption risks\"",
+        "subtitle": "PQ-240, 11.05.2022"
+      },
+      {
+        "title": "Resolution of the Cabinet of Ministers \"On approval of the Regulation on encouraging whistleblowers\"",
+        "subtitle": "No. 829, 31.12.2020"
+      },
+      {
+        "title": "Methodology for identifying and assessing corruption risks in state authorities",
+        "subtitle": "No. 3383, 31.08.2022"
+      },
+      {
+        "title": "Resolution of the Cabinet of Ministers \"On additional measures to ensure compliance with ethics rules by civil servants\"",
+        "subtitle": "No. 595, 14.10.2022"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "Working hours of the Admissions Committee?",
+        "answer": "Monday – Friday, from 9:00 to 18:00."
+      },
+      {
+        "question": "What are the requirements for Master's admission?",
+        "answer": "For MBA: minimum 3 years of work experience and under 45 years of age. For MSc: work experience is not required."
+      },
+      {
+        "question": "When is the application period?",
+        "answer": "Applications are accepted twice a year (summer and winter intake periods)."
+      },
+      {
+        "question": "How are the entrance exams conducted?",
+        "answer": "In two stages: 1) Interview with candidates. 2) Testing conducted by the Agency for Assessment of Knowledge and Skills."
+      },
+      {
+        "question": "What documents are required?",
+        "answer": "Application, letter of recommendation, copy of diploma, 4x6 photo, extract from employment record, language certificate (if available)."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "address_title": "Address",
+    "address": "Toshkent city, Shaykhontohur district, Abdulla Qodiriy street, 7A",
+    "phone": "Phone",
+    "email": "Email",
+    "working_hours": "Working Hours",
+    "hours": "Mon-Fri: 09:00 - 18:00",
+    "close": "Close"
+  },
+  "construction": {
+    "title": "Page Under Construction",
+    "description": "This page is currently being prepared. All information will be available soon.",
+    "back_home": "Back to Home"
+  },
+  "hero": {
+    "quote": "There should be absolutely no concepts of 'theft' and 'corruption' in the construction sector. To achieve this, we must digitize all processes — from design to commissioning.",
+    "sub_quote": "If the project is high quality, the construction will be high quality. A poor quality project is equivalent to throwing state funds into the wind.",
+    "position": "President of the Republic of Uzbekistan",
+    "name": "Shavkat Mirziyoyev",
+    "read_more": "Read More"
+  },
+  "news": {
+    "title": "Latest News",
+    "all": "All News",
+    "map_title": "Regional Coverage",
+    "badge": "News",
+    "read_more": "Read more",
+    "back": "Go back",
+    "not_found": "News not found",
+    "to_home": "To Home Page"
+  },
+  "advantages": {
+    "title": "Our Advantages",
+    "cert": {
+        "title": "Professional Certification",
+        "desc": "Confirming personnel qualifications by introducing and improving the system of certification of specialists in urban planning activities"
+    },
+    "course": {
+        "title": "Qualification Courses",
+        "desc": "Organizing qualification courses based on modern curricula for managers and specialists in construction and housing and communal services"
+    },
+    "manual": {
+        "title": "Methodological Guides",
+        "desc": "Developing and publishing necessary educational and methodological guides, textbooks, and studying materials for sector specialists"
+    },
+    "science": {
+        "title": "Scientific Activity",
+        "desc": "Conducting research work to study and solve problems in the sector and introducing innovative solutions"
+    },
+    "inter": {
+        "title": "International Cooperation",
+        "desc": "Establishing cooperation ties and exchanging experience with leading educational institutions and scientific centers of developed countries"
+    },
+    "digital": {
+        "title": "Digital Platforms",
+        "desc": "Using modern information systems to fully digitize educational processes and the certification system, ensuring transparency"
+    },
+    "expert": {
+        "title": "Modern Specialists",
+        "desc": "Establishment of a system for training highly qualified and competitive personnel meeting labor market requirements"
+    }
+  },
+  "gallery": {
+    "title": "Photo Gallery",
+    "image_alt": "Gallery image {index}",
+    "more": "Show All",
+    "less": "Show Less"
+  },
+  "mission": {
+    "label": "Our Mission",
+    "text": "Higher education institution offering short-term training courses in the fields of Construction and Housing and Communal Services, and periodically certifying their activities."
+  },
+  "footer": {
+    "institute_name": "Competence Development",
+    "institute_sub": "Institute",
+    "about": "The Competence Development Institute is the central body for professional certification in the construction sector of Uzbekistan. We ensure safety, quality, and innovation in national infrastructure.",
+    "sections": {
+        "institute": "Institute",
+        "quick_links": "Quick Links",
+        "contact": "Contact"
+    },
+    "links": {
+        "about": "About Us",
+        "leadership": "Leadership",
+        "structure": "Structure",
+        "jobs": "Vacancies",
+        "docs": "Regulatory Documents",
+        "programs": "Educational Programs",
+        "schedule": "Exam Schedule",
+        "distance": "Distance Learning",
+        "check": "Verify Certificate"
+    },
+    "contact_btn": "Send Message",
+    "rights": "© 2026 Institute for Competence Development. All rights reserved.",
+    "policy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "map": "Site Map"
+  },
+  "partners": {
+    "title": "Trusted by",
+    "president_admin": "Administration of the President of the Republic of Uzbekistan",
+    "min_construction": "Ministry of Construction and Housing Communal Services"
+  },
+  "useful_links": {
+    "title": "Useful Links",
+    "president": "Official website of the President of the Republic of Uzbekistan",
+    "civil_service": "Agency for the Development of Public Service",
+    "government": "Government Portal of the Republic of Uzbekistan",
+    "assessment": "Agency for Assessment of Knowledge and Skills",
+    "economy": "Ministry of Economy and Finance of the Republic of Uzbekistan"
+  },
+  "stats": {
+    "specialists": "Trained Specialists",
+    "partners": "Partner Companies",
+    "projects": "Scientific Projects",
+    "centers": "Regional Centers"
+  },
+  "courses": {
+    "title": "Educational Pathways",
+    "items": {
+      "engineering": {
+        "title": "Project Chief Engineer Certification Course",
+        "description": "Comprehensive preparation for certification exams for chief engineers of category I and II projects."
+      },
+      "safety": {
+        "title": "Construction Site Safety Management",
+        "description": "Mandatory retraining for site managers focusing on new safety regulations and international standards."
+      },
+      "architecture": {
+        "title": "BIM Technologies in Modern Design",
+        "description": "Practical course on Building Information Modeling software and collaborative design workflows."
+      }
+    },
+    "categories": {
+      "engineering": "CIVIL ENGINEERING",
+      "safety": "SAFETY",
+      "architecture": "ARCHITECTURE"
+    }
+  },
+  "services": {
+    "search": {
+      "title": "Find a Specialist",
+      "desc": "Search the national registry of certified experts."
+    },
+    "library": {
+      "title": "Digital Library",
+      "desc": "Access technical regulations and scientific articles database."
+    },
+    "exam": {
+      "title": "Apply for Exam",
+      "desc": "Submit documents for qualification attestation."
+    },
+    "help": {
+      "title": "Need Help?",
+      "desc": "Contact the support center for assistance.",
+      "link": "Support Center"
+    }
+  },
+  "news_data": {
+    "6": {
+      "title": "Practical exercises held at BoMI construction object",
+      "time": "Today",
+      "dateBadge": "04<br>FEB",
+      "content": "<p>Students of the 33rd and 31st seasons, specializing in \"State Control at Construction Sites\", are conducting their final practical lessons at the \"BoMI\" construction site of the Republic of Korea in Tashkent. These practical lessons are organized to further strengthen the students' knowledge of state control and legal aspects, as well as to gain practical experience.</p><p class=\"mt-4\">The \"BoMI\" construction object is one of the modern and innovative projects implemented by South Korea and is of great importance in the development of Tashkent city.</p><p class=\"mt-4\">The final practical classes conducted at the \"BoMI\" construction object were very effective. During these classes, students gained valuable knowledge and experience on effective implementation of state control in their professional activities. This will be of great help in their future activities.</p>"
+    },
+    "5": {
+      "title": "Promotional event held at Deko-Kron construction enterprise",
+      "time": "Today",
+      "dateBadge": "15<br>MAY",
+      "content": "<p>As we have been noting, the Institute for Competence Development under the Ministry of Construction and Housing and Communal Services trains specialists operating in the field of construction and housing and communal services.</p><p class=\"mt-4\">In order to ensure the execution of the Resolution of the Cabinet of Ministers of the Republic of Uzbekistan No. 460 and to promote the essence of this resolution, officials of the Institute for Competence Development are conducting promotional work on site. Detailed information is provided on the procedure for certification of specialists, its specific requirements and opportunities.</p><p class=\"mt-4 font-semibold\">In particular, today's event took place at the Deko-Kron construction enterprise.</p><blockquote class=\"border-l-4 border-primary pl-4 italic my-6 text-gray-700 dark:text-gray-300\">\"Today, just like in all areas, there is a high demand for modern technologies in urban planning. The practical application of these technologies requires great responsibility, knowledge, and skills from the employee. In this sense, we have developed our education system based on the latest innovative solutions. Theoretical and practical knowledge provided in our training courses will serve to increase the efficiency of your future activities,\" said institute official F. Mamajonova.</blockquote><p>It should be noted separately that these promotional events serve as a prelude to important work on improving the sphere.</p>"
+    },
+    "4": {
+      "title": "Training courses on “Requirements and Practice of Seismic Isolation Application”",
+      "time": "Today",
+      "dateBadge": "15<br>MAY",
+      "content": "<p>In order to ensure the implementation of the tasks defined in paragraph 26 of the “Roadmap for improving the system of ensuring seismic safety and increasing the earthquake resistance of buildings and structures”, approved by Appendix 1 to the Resolution of the President of the Republic of Uzbekistan dated April 17, 2024, No. PQ-161, we announce the organization of training courses entitled “Requirements and Practice of Seismic Isolation Application” at the Institute for Competence Development for specialists of design, construction organizations and the state construction control inspection.</p><p class=\"mt-4\">The duration of the training course is 44 hours (1 week).</p><h3 class=\"text-lg font-bold mt-6 mb-2\">Course listeners will learn:</h3><ul class=\"list-disc pl-5 space-y-2\"><li>practical methods of ensuring earthquake resistance of buildings and structures by studying foreign experience;</li><li>modern design and construction in seismically hazardous areas;</li><li>use of normative and technical literature on the project and construction of buildings and structures in seismic zones;</li><li>application of modern methods for assessing the seismic resistance of buildings and structures;</li><li>solving the main principles of design and construction in seismically hazardous areas;</li><li>mastering the principles of design, construction and operation of earthquake-resistant buildings taking into account life safety requirements;</li><li>methods of calculating buildings and structures for seismic effects, including skills in using automated calculation software systems.</li></ul><p class=\"mt-4\">State-issued certificates will be awarded to course listeners who have fully mastered the educational programs and successfully passed the final control.</p><p class=\"mt-4 font-semibold\">For detailed information about the course, you can contact 71 241-58-01, 93 350-30-13.</p>"
+    }
+  }
+}

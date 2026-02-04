@@ -6,74 +6,63 @@
           <div class="flex items-center gap-4">
             <img src="/logo_white.png" alt="KRI Logo" class="h-12 w-auto object-contain" />
             <div class="hidden sm:flex flex-col">
-              <span class="text-white dark:text-white text-lg sm:text-lg font-extrabold leading-none tracking-tight uppercase">Kompetensiyani Rivojlantirish</span>
-              <span class="text-[12px] uppercase font-bold text-white leading-snug ">Instituti</span>
+              <span class="text-white dark:text-white text-lg sm:text-lg font-extrabold leading-none tracking-tight uppercase">{{ t('footer.institute_name') }}</span>
+              <span class="text-[12px] uppercase font-bold text-white leading-snug ">{{ t('footer.institute_sub') }}</span>
             </div>
           </div>
           <p class="text-gray-400 text-sm leading-relaxed max-w-sm">
-            Kompetensiyani Rivojlantirish Instituti O'zbekiston qurilish sohasida professional sertifikatlashtirish bo'yicha markaziy organ hisoblanadi. Biz milliy infratuzilmada xavfsizlik, sifat va innovatsiyalarni ta'minlaymiz.
+            {{ t('footer.about') }}
           </p>
-          <div class="flex gap-4 mt-2">
-            <a class="w-10 h-10 bg-white/5 hover:bg-primary flex items-center justify-center transition-colors" href="#">
-              <span class="material-symbols-outlined text-sm">public</span>
-            </a>
-            <a class="w-10 h-10 bg-white/5 hover:bg-primary flex items-center justify-center transition-colors" href="#">
-              <span class="material-symbols-outlined text-sm">share</span>
-            </a>
-          </div>
+
         </div>
         <div>
-          <h3 class="text-sm font-bold mb-6 text-white uppercase tracking-wider">Institut</h3>
+          <h3 class="text-sm font-bold mb-6 text-white uppercase tracking-wider">{{ t('footer.sections.institute') }}</h3>
           <ul class="flex flex-col gap-3">
-            <li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Biz haqimizda</a></li>
-            <li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Rahbariyat</a></li>
-            <li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Tuzilma</a></li>
-            <li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Bo'sh ish o'rinlari</a></li>
-            <li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Me'yoriy hujjatlar</a></li>
+            <li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">{{ t('footer.links.about') }}</a></li>
+            <li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">{{ t('footer.links.leadership') }}</a></li>
+            <li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">{{ t('footer.links.structure') }}</a></li>
+            <li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">{{ t('footer.links.jobs') }}</a></li>
+            <li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">{{ t('footer.links.docs') }}</a></li>
           </ul>
         </div>
         <div>
-          <h3 class="text-sm font-bold mb-6 text-white uppercase tracking-wider">Tezkor Havolalar</h3>
+          <h3 class="text-sm font-bold mb-6 text-white uppercase tracking-wider">{{ t('footer.sections.quick_links') }}</h3>
           <ul class="flex flex-col gap-3">
-            <li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Ta'lim dasturlari</a></li>
-            <li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Imtihon jadvali</a></li>
-            <li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Masofaviy ta'lim</a></li>
-            <li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Sertifikatni tekshirish</a></li>
+            <li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">{{ t('footer.links.programs') }}</a></li>
+            <li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">{{ t('footer.links.schedule') }}</a></li>
+            <li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">{{ t('footer.links.distance') }}</a></li>
+            <li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">{{ t('footer.links.check') }}</a></li>
           </ul>
         </div>
         <div>
-          <h3 class="text-sm font-bold mb-6 text-white uppercase tracking-wider">Bog'lanish</h3>
+          <h3 class="text-sm font-bold mb-6 text-white uppercase tracking-wider">{{ t('footer.sections.contact') }}</h3>
           <div class="flex flex-col gap-4">
             <div class="flex items-start gap-3">
               <span class="material-symbols-outlined text-secondary text-sm mt-1">location_on</span>
-              <span class="text-gray-400 text-sm">Toshkent sh., Abay ko'chasi, 6-uy</span>
+              <span class="text-gray-400 text-sm">Toshkent shahri, Shayxontohur tumani, Abdulla Qodiriy koʻchasi, 7A</span>
             </div>
             <div class="flex items-center gap-3">
               <span class="material-symbols-outlined text-secondary text-sm">call</span>
-              <span class="text-gray-400 text-sm">+998 71 123 45 67</span>
+              <span class="text-gray-400 text-sm">(50) 333-24-01</span>
             </div>
             <div class="flex items-center gap-3">
               <span class="material-symbols-outlined text-secondary text-sm">mail</span>
               <span class="text-gray-400 text-sm">info@kri.uz</span>
             </div>
-            <button class="mt-4 w-full border border-gray-700 hover:border-white text-white text-xs font-bold py-3 uppercase tracking-wider transition-colors">
-              Xabar yuborish
-            </button>
+
           </div>
         </div>
       </div>
       <div class="mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="text-gray-500 text-xs">© 2026 Kompetensiyani Rivojlantirish Instituti. Barcha huquqlar himoyalangan.</p>
-        <div class="flex gap-6 text-xs text-gray-500">
-          <a class="hover:text-white" href="#">Maxfiylik siyosati</a>
-          <a class="hover:text-white" href="#">Foydalanish shartlari</a>
-          <a class="hover:text-white" href="#">Sayt xaritasi</a>
-        </div>
+        <p class="text-gray-500 text-xs">{{ t('footer.rights') }}</p>
+
       </div>
     </div>
   </footer>
 </template>
 
 <script setup lang="ts">
-// No logic needed for this static footer yet
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 </script>

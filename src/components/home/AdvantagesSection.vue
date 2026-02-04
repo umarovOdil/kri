@@ -1,7 +1,7 @@
 <template>
   <section class="py-16 bg-white dark:bg-[#1a1d26]">
     <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-center text-primary dark:text-primary mb-12">Bizning ustunliklarimiz</h2>
+      <h2 class="text-3xl font-bold text-center text-primary dark:text-primary mb-12">{{ t('advantages.title') }}</h2>
 
       <div class="flex flex-wrap justify-center gap-6">
         <!-- Top Row (4 items) -->
@@ -31,44 +31,49 @@
 </template>
 
 <script setup lang="ts">
-const topRowItems = [
+import { computed } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
+
+const topRowItems = computed(() => [
   {
-    icon: 'public',
-    title: 'Global munosabatlar',
-    description: "Buyuk Ipak yo'lining markazida joylashganimizni hisobga olib, biz Sharq va G'arbning ilg'or bilim va tajribalarini o'zimizga moslashtirib, undan unumli foydalanamiz"
+    icon: 'workspace_premium',
+    title: t('advantages.cert.title'),
+    description: t('advantages.cert.desc')
+  },
+  {
+    icon: 'school',
+    title: t('advantages.course.title'),
+    description: t('advantages.course.desc')
   },
   {
     icon: 'menu_book',
-    title: 'Amaliy bilim va tajriba',
-    description: "Barcha o'quv jarayonlari tinglovchilarni biznes dunyosidagi real vaziyatlarga jalb qilish uchun mo'ljallangan"
+    title: t('advantages.manual.title'),
+    description: t('advantages.manual.desc')
   },
   {
-    icon: 'handshake',
-    title: 'Tarmoqlararo aloqalar va hamkorlik uchun eng qulay imkoniyat',
-    description: "Bizning tinglovchilar - O'zbekiston iqtisodiy sektorining turli tarmoqlarida faoliyat yurituvchi o'rta va yuqori bo'g'im menejerlaridir"
-  },
-  {
-    icon: 'workspace_premium',
-    title: 'Innovatsiya va tadbirkorlik',
-    description: "Bizning dastur tinglovchilarni yangi va innovatsion g'oyalarni ilgari surishga, shu sohadagi ko'p yillik tajribalarini va biznes dunyosidagi so'nggi yutuqlarni birlashtirishga tayyorlash uchun mo'ljallangan"
+    icon: 'science',
+    title: t('advantages.science.title'),
+    description: t('advantages.science.desc')
   }
-];
+]);
 
-const bottomRowItems = [
+const bottomRowItems = computed(() => [
   {
-    icon: 'trending_up',
-    title: 'Iqtisodiyotning real sektori bilan faol hamkorlik',
-    description: "Bizning dastur tinglovchilarni yangi va innovatsion g'oyalarni ilgari surishga, shu sohadagi ko'p yillik tajribalarini va biznes dunyosidagi so'nggi yutuqlarni birlashtirishga tayyorlash uchun mo'ljallangan"
-  },
-  {
-    icon: 'groups',
-    title: 'Yetakchi ilmiy-pedagogik kadrlar',
-    description: "Professor o'qituvchilarimiz ko'plab xorijiy universitetlarning diplom va sertifikatlariga ega. Shuningdek magistratura va qisqa muddatli kurslarimizda xorijiy hamkor universitetlarning professor o'qituvchilari ham ta'lim beradi"
+    icon: 'public',
+    title: t('advantages.inter.title'),
+    description: t('advantages.inter.desc')
   },
   {
     icon: 'computer',
-    title: 'Eng zamonaviy moddiy texnik baza',
-    description: "Oliy maktab eng zamonaviy kompyuter texnologiyalari bilan jihozlangan va so'nggi yillarda nashr etilgan eng katta biznes kitob va o'quv qo'llanmalar to'plamiga ega"
+    title: t('advantages.digital.title'),
+    description: t('advantages.digital.desc')
+  },
+  {
+    icon: 'groups',
+    title: t('advantages.expert.title'),
+    description: t('advantages.expert.desc')
   }
-];
+]);
 </script>
