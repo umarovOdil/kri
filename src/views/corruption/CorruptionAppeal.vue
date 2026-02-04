@@ -33,15 +33,15 @@
             </div>
           </div>
 
-          <!-- <div class="flex items-start gap-4">
+          <div class="flex items-start gap-4">
             <div class="w-12 h-12 rounded-lg bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center shrink-0">
               <span class="material-symbols-outlined text-primary text-2xl">smart_toy</span>
             </div>
             <div>
               <h3 class="font-bold text-gray-900 dark:text-white mb-1">{{ t('corruption.bot') }}</h3>
-              <a href="#" class="text-lg text-primary font-bold hover:underline">@KRI_Anticor_Bot</a>
+              <a href="https://t.me/Uzkribot" target="_blank" class="text-lg text-primary font-bold hover:underline">@Uzkribot</a>
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>

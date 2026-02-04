@@ -33,8 +33,38 @@
       "title": "Educational Programs",
       "masters": "Master's: Civil Engineering",
       "retraining": "Retraining: Civil Engineering",
-      "qualification": "Qualification Improvement (VMQ 460)",
-      "special": "Special Courses (VMQ 451)"
+      "qualification": {
+        "title": "Qualification Improvement",
+        "vmq460": {
+          "title": "Training courses based on CMB Resolution No. 460",
+          "courses": [
+            "Technical supervision at construction sites",
+            "Internal control of construction contractor at construction sites",
+            "Development of urban planning documentation and architectural supervision",
+            "Development of Chief Project Engineer competence",
+            "Development of Chief Project Architect competence",
+            "Control measurement at construction sites",
+            "Expertise of urban planning documentation",
+            "State control in the field of construction and urban planning",
+            "Management of multi-apartment houses",
+            "Architecture and construction management",
+            "State control at construction sites (Drinking water supply and wastewater disposal)",
+            "State control at construction sites (Management of multi-apartment houses)",
+            "Technical supervision at construction sites (Road sector)",
+            "Internal control of construction contractor at construction sites (Road sector)",
+            "Development of urban planning documentation and architectural supervision (Road sector)",
+            "Activity as Chief Project Engineer in design organizations (Road sector)",
+            "Activity as Chief Project Architect in design organizations (Road sector)"
+          ]
+        },
+        "vmq451": {
+          "title": "Qualification courses based on CMB Resolution No. 451",
+          "courses": [
+            "Energy efficiency in construction",
+            "Conducting instrumental-technical inspection"
+          ]
+        }
+      }
     },
     "science": {
       "title": "Scientific Activity",
@@ -46,11 +76,13 @@
       "regulations": "Regulatory Documents",
       "open_data": "Open Data"
     },
-    "international": {
-      "title": "International Relations",
-      "partners": "International Partners",
-      "cooperation": "Cooperation",
-      "visits": "Visits and Meetings"
+    "information_service": {
+      "title": "INFORMATION SERVICE",
+      "news": "News",
+      "press_releases": "Press Releases",
+      "announcements": "Announcements",
+      "video_gallery": "Video Gallery",
+      "photo_gallery": "Photo Gallery"
     },
     "corruption": {
       "title": "Corruption",
@@ -90,6 +122,14 @@
       {
         "title": "Law of the Republic of Uzbekistan \"On Combating Corruption\"",
         "subtitle": "ORQ-419, 03.01.2017"
+      },
+      {
+        "title": "Law of the Republic of Uzbekistan \"On Conflict of Interests\"",
+        "subtitle": "ORQ-931, 05.06.2024-yil"
+      },
+      {
+        "title": "Decree of the President of the Republic of Uzbekistan \"On measures to further improve the system of preventing and combating corruption in the Republic of Uzbekistan\"",
+        "subtitle": "PF-270, 30.12.2025-yil"
       },
       {
         "title": "Decree of the President \"On measures to further improve the anti-corruption system in the Republic of Uzbekistan\"",

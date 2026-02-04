@@ -33,8 +33,38 @@
       "title": "Ta'lim Dasturlari",
       "masters": "Magistratura: Qurilish muhandisligi",
       "retraining": "Qayta tayyorlash: Qurilish muhandisligi",
-      "qualification": "Malaka oshirish (VMQ 460)",
-      "special": "Maxsus kurslar (VMQ 451)"
+      "qualification": {
+        "title": "Malaka oshirish",
+        "vmq460": {
+          "title": "VMQ 460-son qaror asosida tashkil etilgan o'quv kurslar",
+          "courses": [
+            "Qurilish obyektlarida texnik nazoratni olib borish",
+            "Qurilish obyektlarida qurilish pudrat tashkilotining ichki nazoratini amalga oshirish",
+            "Shaharsozlik hujjatlarini ishlab chiqish va mualliflik nazoratini olib borish",
+            "Loyiha bosh muhandisi kompetensiyasini rivojlantirish",
+            "Loyiha bosh arxitektori kompetensiyasini rivojlantirish",
+            "Qurilish obyektlarida nazorat o'lchovi",
+            "Shaharsozlik hujjatlarini ekspertiza qilish",
+            "Qurilish va shaharsozlik sohasida davlat nazorati",
+            "Ko'p kvartirali uylar boshqaruvi",
+            "Arxitektura va qurilish boshqaruvi",
+            "Qurilish obyektlarida davlat nazoratini olib borish (Ichimlik suvi ta'minoti va oqova suvlarni chiqarib yuborish)",
+            "Qurilish obyektlarida davlat nazoratini olib borish (Ko'p kvartirali uylarni boshqarish)",
+            "Qurilish obyektlarida texnik nazoratni olib borish (Avtomobil yo'llari sohasi)",
+            "Qurilish obyektlarida qurilish pudrat tashkilotining ichki nazoratini amalga oshirish (Avtomobil yo'llari sohasi)",
+            "Shaharsozlik hujjatlarini ishlab chiqish va mualliflik nazoratini olib borish (Avtomobil yo'llari sohasi)",
+            "Loyiha tashkilotlarida loyiha bosh muhandisi sifatida faoliyatni amalga oshirish (Avtomobil yo'llari sohasi)",
+            "Loyiha tashkilotlarida loyiha bosh arxitektori sifatida faoliyatni amalga oshirish (Avtomobil yo'llari sohasi)"
+          ]
+        },
+        "vmq451": {
+          "title": "VMQ 451-son qaror asosida tashkil etilgan malaka oshirish kurslari",
+          "courses": [
+            "Qurilishda energiya samaradorlik",
+            "Instrumental-texnik tekshiruv o'tkazish"
+          ]
+        }
+      }
     },
     "science": {
       "title": "Ilmiy Faoliyat",
@@ -46,11 +76,13 @@
       "regulations": "Me'yoriy-huquqiy hujjatlar",
       "open_data": "Ochiq ma'lumotlar"
     },
-    "international": {
-      "title": "Xalqaro Aloqalar",
-      "partners": "Xalqaro hamkorlar",
-      "cooperation": "Hamkorlik",
-      "visits": "Safar va uchrashuvlar"
+    "information_service": {
+      "title": "AXBOROT XIZMATI",
+      "news": "Yangiliklar",
+      "press_releases": "Press relizlar",
+      "announcements": "E'lonlar",
+      "video_gallery": "Videogalereya",
+      "photo_gallery": "Fotogalereya"
     },
     "corruption": {
       "title": "Korrupsiya",
@@ -90,6 +122,14 @@
       {
         "title": "“Korrupsiyaga qarshi kurashish to‘g‘risida”gi O‘zbekiston Respublikasining Qonuni",
         "subtitle": "O‘RQ-419-son, 03.01.2017-yil"
+      },
+      {
+        "title": "“Manfaatlar to‘qnashuvi to‘g‘risida”gi O‘zbekiston Respublikasining Qonuni",
+        "subtitle": "O‘RQ-931-son, 05.06.2024-yil"
+      },
+      {
+        "title": "“O‘zbekiston Respublikasida korrupsiyaning oldini olish va unga qarshi kurashish tizimini yanada takomillashtirish to‘g‘risida”gi O‘zbekiston Respublikasi Prezidentining Farmoni",
+        "subtitle": "PF-270-son, 30.12.2025-yil"
       },
       {
         "title": "“O‘zbekiston Respublikasida Korrupsiyaga qarshi kurashish tizimini yanada takomillashtirish chora-tadbirlari to‘g‘risida”gi O‘zbekiston Respublikasi Prezidentining Farmoni",

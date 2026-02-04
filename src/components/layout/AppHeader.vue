@@ -5,10 +5,11 @@
       <div class="max-w-[1440px] mx-auto py-4 flex items-center justify-between">
         <!-- Logo Area -->
         <div class="flex items-center gap-4">
-          <img src="/logo.png" alt="KRI Logo" class="h-12 w-auto object-contain" />
+          <img src="/logo.png" alt="KRI Logo" class="h-12 w-auto object-contain" :class="isDark ? 'hidden' : 'block'" />
+          <img src="/logo_white.png" alt="KRI Logo" class="h-12 w-auto object-contain" :class="isDark ? 'block' : 'hidden'" />
           <div class="hidden sm:flex flex-col">
             <span class="text-[#273469] dark:text-white text-lg sm:text-lg font-extrabold leading-none tracking-tight uppercase">Kompetensiyani Rivojlantirish</span>
-            <span class="text-[12px] uppercase font-bold text-[#273469] leading-snug ">Instituti</span>
+            <span class="text-[12px] uppercase font-bold text-[#273469] leading-snug dark:text-white">Instituti</span>
           </div>
         </div>
 
@@ -18,6 +19,10 @@
              <!-- <button class="hover:text-primary flex items-center gap-1">
                <span class="material-symbols-outlined text-[20px]">search</span>
              </button> -->
+             <button @click="toggleTheme" class="hover:text-primary flex items-center gap-1 border border-gray-200 px-3 py-1 rounded-sm mr-2 transition-colors" :class="isDark ? 'bg-gray-800 text-yellow-400 border-gray-700' : 'bg-white text-gray-600'">
+               <span class="material-symbols-outlined text-[18px]">{{ isDark ? 'light_mode' : 'dark_mode' }}</span>
+             </button>
+
              <div class="relative" ref="accessibilityMenu">
                <button @click="showAccessibility = !showAccessibility" class="hover:text-primary flex items-center gap-1 border border-gray-200 px-3 py-1 rounded-sm">
                  <span class="material-symbols-outlined text-[18px]">visibility</span>
@@ -98,7 +103,7 @@
                   <router-link v-if="child.link" :to="child.link" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary transition-colors border-b border-gray-50 last:border-0 flex justify-between items-center text-[12px]">
                     <span class="block pr-2">{{ child.title }}</span>
                   </router-link>
-                  <a v-else-if="child.subChildren" href="#" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary transition-colors border-b border-gray-50 last:border-0 flex justify-between items-center text-[12px]">
+                  <a v-else-if="child.subChildren || child.children" href="#" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary transition-colors border-b border-gray-50 last:border-0 flex justify-between items-center text-[12px]">
                     <span class="block pr-2">{{ child.title }}</span>
                     <span class="material-symbols-outlined text-[14px] text-gray-400 shrink-0">chevron_right</span>
                   </a>
@@ -106,7 +111,7 @@
                     <span class="block pr-2">{{ child.title }}</span>
                   </router-link>
 
-                  <!-- Sub-Dropdown (Level 3) -->
+                  <!-- Level 3 (Strings) -->
                   <div v-if="child.subChildren" 
                        class="absolute left-full top-0 w-[400px] bg-white shadow-xl invisible group-hover/sub:visible opacity-0 group-hover/sub:opacity-100 transition-all duration-200 border-l border-gray-100">
                     <ul class="py-2 max-h-[500px] overflow-y-auto custom-scrollbar">
@@ -114,6 +119,31 @@
                           <router-link to="/construction" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary text-[11px] leading-tight border-b border-gray-50 last:border-0">
                             {{ sub }}
                           </router-link>
+                       </li>
+                    </ul>
+                  </div>
+
+                  <!-- Level 3 (Items with Children) -->
+                  <div v-if="child.children" 
+                       class="absolute left-full top-0 w-[350px] bg-white shadow-xl invisible group-hover/sub:visible opacity-0 group-hover/sub:opacity-100 transition-all duration-200 border-l border-gray-100">
+                    <ul class="py-2">
+                       <li v-for="(grandChild, gIndex) in child.children" :key="gIndex" class="relative group/deep">
+                          <a href="#" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary transition-colors border-b border-gray-50 last:border-0 flex justify-between items-center text-[12px]">
+                            <span class="block pr-2">{{ grandChild.title }}</span>
+                            <span v-if="grandChild.subChildren" class="material-symbols-outlined text-[14px] text-gray-400 shrink-0">chevron_right</span>
+                          </a>
+
+                          <!-- Level 4 (SubChildren Strings of Level 3 Items) -->
+                          <div v-if="grandChild.subChildren" 
+                               class="absolute left-full top-0 w-[400px] bg-white shadow-xl invisible group-hover/deep:visible opacity-0 group-hover/deep:opacity-100 transition-all duration-200 border-l border-gray-100">
+                            <ul class="py-2 max-h-[500px] overflow-y-auto custom-scrollbar">
+                               <li v-for="(gsItem, gsIndex) in grandChild.subChildren" :key="gsIndex">
+                                  <router-link to="/construction" class="block px-6 py-2.5 hover:bg-gray-50 hover:text-primary text-[11px] leading-tight border-b border-gray-50 last:border-0">
+                                    {{ gsItem }}
+                                  </router-link>
+                               </li>
+                            </ul>
+                          </div>
                        </li>
                     </ul>
                   </div>
@@ -139,6 +169,14 @@
         <div class="p-4">
            <!-- Utility Buttons Mobile -->
            <div class="flex flex-wrap gap-2 mb-6">
+               <button 
+                 @click="toggleTheme" 
+                 class="px-3 py-1 text-xs border border-gray-200 rounded-sm dark:border-gray-600 transition-colors flex items-center gap-1"
+                 :class="isDark ? 'bg-gray-800 text-yellow-400 border-gray-700' : 'bg-white text-gray-600'"
+               >
+                 <span class="material-symbols-outlined text-[16px]">{{ isDark ? 'light_mode' : 'dark_mode' }}</span>
+                 {{ isDark ? 'Light' : 'Dark' }}
+               </button>
                <button 
                  v-for="(label, lang) in {'uz': 'O\'ZB', 'ru': 'РУС', 'en': 'ENG'}" 
                  :key="lang" 
@@ -216,7 +254,7 @@ import { useI18n } from 'vue-i18n';
 import ContactModal from './ContactModal.vue';
 import LoginModal from './LoginModal.vue';
 
-const { t, locale } = useI18n();
+const { t, tm, locale } = useI18n();
 
 const setLocale = (lang: string) => {
   locale.value = lang;
@@ -231,6 +269,18 @@ const fontSize = ref(0);
 const accessibilityMenu = ref<HTMLElement | null>(null);
 const isMobileMenuOpen = ref(false);
 const activeMobileSubmenu = ref<number | null>(null);
+const isDark = ref(false);
+
+const toggleTheme = () => {
+  isDark.value = !isDark.value;
+  if (isDark.value) {
+    document.documentElement.classList.add('dark');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    document.documentElement.classList.remove('dark');
+    localStorage.setItem('theme', 'light');
+  }
+};
 
 const handleAction = (action: string) => {
   if (action === 'openContact') {
@@ -288,6 +338,16 @@ const handleClickOutside = (event: MouseEvent) => {
 
 onMounted(() => {
   document.addEventListener('click', handleClickOutside);
+  
+  // Initialize theme
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    isDark.value = true;
+    document.documentElement.classList.add('dark');
+  } else {
+    isDark.value = false;
+    document.documentElement.classList.remove('dark');
+  }
 });
 
 onUnmounted(() => {
@@ -324,8 +384,19 @@ const menuItems = computed<MenuItem[]>(() => [
     children: [
       { title: t('menu.programs.masters') },
       { title: t('menu.programs.retraining') },
-      { title: t('menu.programs.qualification') },
-      { title: t('menu.programs.special') }
+      { 
+        title: t('menu.programs.qualification.title'),
+        children: [
+          {
+             title: t('menu.programs.qualification.vmq460.title'),
+             subChildren: tm('menu.programs.qualification.vmq460.courses') as unknown as string[]
+          },
+          {
+             title: t('menu.programs.qualification.vmq451.title'),
+             subChildren: tm('menu.programs.qualification.vmq451.courses') as unknown as string[]
+          }
+        ]
+      }
     ]
   },
   { 
@@ -341,11 +412,13 @@ const menuItems = computed<MenuItem[]>(() => [
     ]
   },
   { 
-    title: t('menu.international.title'),
+    title: t('menu.information_service.title'),
     children: [
-      { title: t('menu.international.partners') },
-      { title: t('menu.international.cooperation') },
-      { title: t('menu.international.visits') }
+      { title: t('menu.information_service.news') },
+      { title: t('menu.information_service.press_releases') },
+      { title: t('menu.information_service.announcements') },
+      { title: t('menu.information_service.video_gallery') },
+      { title: t('menu.information_service.photo_gallery') }
     ]
   },
   { 
