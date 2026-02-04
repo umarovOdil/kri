@@ -39,15 +39,15 @@
           <div class="flex flex-col gap-4">
             <div class="flex items-start gap-3">
               <span class="material-symbols-outlined text-secondary text-sm mt-1">location_on</span>
-              <span class="text-gray-400 text-sm">Toshkent shahri, Shayxontohur tumani, Abdulla Qodiriy koʻchasi, 7A</span>
+              <span class="text-gray-400 text-sm">Toshkent shahri, Shayxontohur tumani, Abdulla Qodiriy koʻchasi, 7</span>
             </div>
             <div class="flex items-center gap-3">
               <span class="material-symbols-outlined text-secondary text-sm">call</span>
-              <span class="text-gray-400 text-sm">(71) 241-11-73</span>
+              <span class="text-gray-400 text-sm">(50) 333-24-05</span>
             </div>
             <div class="flex items-center gap-3">
               <span class="material-symbols-outlined text-secondary text-sm">mail</span>
-              <span class="text-gray-400 text-sm">info@kri.uz</span>
+              <span class="text-gray-400 text-sm">info@ukri.uz</span>
             </div>
 
           </div>

@@ -25,7 +25,7 @@
           <div>
             <h3 class="font-bold text-sm text-gray-900 dark:text-white mb-1 uppercase tracking-wide opacity-70">{{ t('contact.address_title') }}</h3>
             <p class="text-gray-700 dark:text-gray-300 font-medium leading-relaxed">
-              <a href="https://www.google.com/maps/search/?api=1&query=Toshkent+shahri,+Shayxontohur+tumani,+Abdulla+Qodiriy+koʻchasi,+7A" target="_blank" class="hover:text-primary transition-colors">
+              <a href="https://www.google.com/maps/search/?api=1&query=Toshkent+shahri,+Shayxontohur+tumani,+Abdulla+Qodiriy+koʻchasi,+7" target="_blank" class="hover:text-primary transition-colors">
                 {{ t('contact.address') }}
               </a>
             </p>
@@ -39,8 +39,8 @@
           </div>
           <div>
             <h3 class="font-bold text-sm text-gray-900 dark:text-white mb-1 uppercase tracking-wide opacity-70">{{ t('contact.phone') }}</h3>
-            <a href="tel:+998712411173" class="text-lg font-bold text-primary hover:underline block">
-              (71) 241-11-73
+            <a href="tel:+998503332405" class="text-lg font-bold text-primary hover:underline block">
+              (50) 333-24-05
             </a>
           </div>
         </div>
@@ -52,7 +52,7 @@
           </div>
           <div>
             <h3 class="font-bold text-sm text-gray-900 dark:text-white mb-1 uppercase tracking-wide opacity-70">{{ t('contact.email') }}</h3>
-            <a href="mailto:info@kri.uz" class="text-gray-700 dark:text-gray-300 font-medium hover:text-primary transition-colors">info@kri.uz</a>
+            <a href="mailto:info@ukri.uz" class="text-gray-700 dark:text-gray-300 font-medium hover:text-primary transition-colors">info@ukri.uz</a>
           </div>
         </div>
 
