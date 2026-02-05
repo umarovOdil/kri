@@ -6,58 +6,34 @@
         <div class="w-24 h-1 bg-primary rounded-full mb-12"></div>
         
         <div class="w-full max-w-7xl flex flex-col lg:flex-row items-stretch gap-8 lg:gap-12">
-          <div class="w-full lg:w-2/3 flex items-center">
-            <UzbekistanMap />
+          <div class="w-full lg:w-2/3 flex items-center px-10">
+            <UzbekistanMap :regions="regions" />
           </div>
           
-          <div class="w-full lg:w-1/3 h-100 bg-white dark:bg-[#1e212b] rounded-xl border border-gray-100 dark:border-gray-800 text-left overflow-hidden flex flex-col">
-            <div class="h-58 w-100 relative">
-              <img 
-                src="/images/gallery/IMG_5542.JPG" 
-                alt="Institute Building" 
-                class="w-full h-full object-cover"
-              >
-              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-              <h3 class="absolute bottom-4 left-6 text-xl font-bold text-white">{{ t('contact.title') }}</h3>
+          <div class="w-full lg:w-1/3 bg-white dark:bg-[#1e212b] rounded-xl border border-gray-100 dark:border-gray-800 text-left flex flex-col shadow-lg h-full">
+            <div class="p-6 border-b border-gray-100 dark:border-gray-700 bg-primary/5">
+              <h3 class="text-xl font-bold text-primary dark:text-white flex items-center gap-2">
+                <span class="material-symbols-outlined">analytics</span>
+                Hududlar kesimida
+              </h3>
             </div>
             
-            <div class="p-8 space-y-6">
-              <!-- Address -->
-              <div class="flex items-start gap-4">
-                <div class="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center shrink-0">
-                  <span class="material-symbols-outlined text-primary">location_on</span>
-                </div>
-                <div>
-                  <h4 class="font-bold text-xs text-gray-500 uppercase tracking-wider mb-1">{{ t('contact.address_title') }}</h4>
-                  <a href="https://www.google.com/maps/search/?api=1&query=Toshkent+shahri,+Shayxontohur+tumani,+Abdulla+Qodiriy+koʻchasi,+7" target="_blank" class="text-sm font-medium text-gray-900 dark:text-white hover:text-primary transition-colors leading-relaxed block">
-                    {{ t('contact.address') }}
-                  </a>
-                </div>
-              </div>
-
-              <!-- Phone -->
-              <div class="flex items-start gap-4">
-                <div class="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center shrink-0">
-                  <span class="material-symbols-outlined text-primary">call</span>
-                </div>
-                <div>
-                  <h4 class="font-bold text-xs text-gray-500 uppercase tracking-wider mb-1">{{ t('contact.phone') }}</h4>
-                  <a href="tel:+998503332405" class="text-lg font-bold text-primary hover:underline block">
-                    (50) 333-24-05
-                  </a>
-                </div>
-              </div>
-
-              <!-- Email -->
-              <div class="flex items-start gap-4">
-                <div class="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center shrink-0">
-                  <span class="material-symbols-outlined text-primary">mail</span>
-                </div>
-                <div>
-                  <h4 class="font-bold text-xs text-gray-500 uppercase tracking-wider mb-1">{{ t('contact.email') }}</h4>
-                  <a href="mailto:info@ukri.uz" class="text-sm font-medium text-gray-900 dark:text-white hover:text-primary transition-colors">
-                    info@ukri.uz
-                  </a>
+            <div class="p-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div 
+                  v-for="(region, index) in regions" 
+                  :key="region.id"
+                  class="flex items-center justify-between p-3 rounded-lg border border-gray-100 dark:border-gray-700 hover:border-primary/30 hover:bg-blue-50/50 dark:hover:bg-blue-900/10 transition-all group cursor-default"
+                >
+                  <div class="flex items-center gap-2 overflow-hidden">
+                    <div class="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-[10px] shrink-0">
+                      {{ index + 1 }}
+                    </div>
+                    <span class="font-medium text-sm text-gray-700 dark:text-gray-200 group-hover:text-primary transition-colors truncate" :title="region.name">{{ region.name }}</span>
+                  </div>
+                  <span class="font-bold text-primary text-sm shrink-0">
+                    {{ region.count }}
+                  </span>
                 </div>
               </div>
             </div>
@@ -69,8 +45,26 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 import UzbekistanMap from './UzbekistanMap.vue';
 
 const { t } = useI18n();
+
+const regions = ref([
+ { id: 'UZ-QR', name: 'Qoraqalpog\'iston', x: 200, y: 180, count: 45 },
+ { id: 'UZ-NW', name: 'Navoiy', x: 400, y: 230, count: 23 },
+ { id: 'UZ-BU', name: 'Buxoro', x: 350, y: 350, count: 18 },
+ { id: 'UZ-XO', name: 'Xorazm', x: 210, y: 270, count: 31 },
+ { id: 'UZ-QA', name: 'Qashqadaryo', x: 480, y: 420, count: 27 },
+ { id: 'UZ-SU', name: 'Surxondaryo', x: 530, y: 480, count: 19 },
+ { id: 'UZ-SA', name: 'Samarqand', x: 480, y: 360, count: 34 },
+ { id: 'UZ-JI', name: 'Jizzax', x: 540, y: 330, count: 22 },
+ { id: 'UZ-SI', name: 'Sirdaryo', x: 590, y: 320, count: 15 },
+ { id: 'UZ-TK', name: 'Toshkent sh.', x: 620, y: 260, count: 56 },
+ { id: 'UZ-TO', name: 'Toshkent v.', x: 660, y: 240, count: 42 },
+ { id: 'UZ-NG', name: 'Namangan', x: 720, y: 260, count: 28 },
+ { id: 'UZ-FA', name: 'Farg\'ona', x: 690, y: 340, count: 36 },
+ { id: 'UZ-AN', name: 'Andijon', x: 760, y: 300, count: 29 },
+])
 </script>
