@@ -29,7 +29,7 @@
             </div>
             <div>
               <h3 class="font-bold text-gray-900 dark:text-white mb-1">{{ t('corruption.email') }}</h3>
-              <a href="mailto:info@ukri.uz" class="text-lg text-primary font-bold hover:underline">info@ukri.uz</a>
+              <a href="mailto:info@uzkri.uz" class="text-lg text-primary font-bold hover:underline">info@uzkri.uz</a>
             </div>
           </div>
 

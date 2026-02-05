@@ -47,7 +47,7 @@
             </div>
             <div class="flex items-center gap-3">
               <span class="material-symbols-outlined text-secondary text-sm">mail</span>
-              <span class="text-gray-400 text-sm">info@ukri.uz</span>
+              <span class="text-gray-400 text-sm">info@uzkri.uz</span>
             </div>
 
           </div>

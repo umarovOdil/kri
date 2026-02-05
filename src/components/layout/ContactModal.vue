@@ -64,7 +64,7 @@
             </div>
             <div>
               <h3 class="font-bold text-sm text-gray-900 dark:text-white mb-1 uppercase tracking-wide opacity-70">{{ t('contact.email') }}</h3>
-              <a href="mailto:info@ukri.uz" class="text-gray-700 dark:text-gray-300 font-medium hover:text-primary transition-colors">info@ukri.uz</a>
+              <a href="mailto:info@uzkri.uz" class="text-gray-700 dark:text-gray-300 font-medium hover:text-primary transition-colors">info@uzkri.uz</a>
             </div>
           </div>
 
